@@ -36,7 +36,7 @@ ${q^T_m}{k_n} = (W_q(x_m+p_m))^T(W_k(x_n+p_n))$
 
 The dot-product is a function of $f(x_m,x_n,m,n) = f_q(x_m,m)^Tf_k(x_n,n)$.
 
-The idea of RoPE is to make the dot-product a function of the *relative*position (*m-n*).
+The idea of RoPE is to make the dot-product a function of the **relative** position (**m-n**).
 
 $g(x_m,x_n,m-n) = g_q(x_m,m)^Tg_k(x_n,n)$
 
