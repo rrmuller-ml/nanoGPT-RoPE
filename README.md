@@ -42,11 +42,15 @@ $g(x_m,x_n,m-n) = g_q(x_m,m)^Tg_k(x_n,n)$
 
 This is achieved by making (in the 2D case and for query only, but same applies to key):
 
-$g_q(x_m,m)=\begin{pmatrix} \cos(m\theta)  & -\sin(m\theta) \\\ \sin(m\theta) & \cos(m\theta) \end{pmatrix}\begin{pmatrix} W^{1,1}_q  & W^{1,2}_q \\\ W^{2,1}_q &W^{2,2}_q \end{pmatrix}\begin{pmatrix} x^1_m \\\ x^2_m \end{pmatrix}$
+```math
+g_q(x_m,m)=\begin{pmatrix} \cos(m\theta)  & -\sin(m\theta) \\ \sin(m\theta) & \cos(m\theta) \end{pmatrix}\begin{pmatrix} W^{1,1}_q  & W^{1,2}_q \\ W^{2,1}_q &W^{2,2}_q \end{pmatrix}\begin{pmatrix} x^1_m \\ x^2_m \end{pmatrix}
+```
 
 The new matrix is a complex-plane rotation matrix. For D higher than 2 and even, we can write it as (4D case):
 
-$\begin{pmatrix} \cos(m\theta_1)  & -\sin(m\theta_1) &0&0 \\\ \sin(m\theta_1) & \cos(m\theta_1)&0&0 \\\0&0&\cos(m\theta_2)  & -\sin(m\theta_2)  \\\ 0&0&\sin(m\theta_2) & \cos(m\theta_2)\end{pmatrix}$
+```math
+\begin{pmatrix} \cos(m\theta_1)  & -\sin(m\theta_1) &0&0 \\ \sin(m\theta_1) & \cos(m\theta_1)&0&0 \\ 0&0&\cos(m\theta_2)  & -\sin(m\theta_2)  \\ 0&0&\sin(m\theta_2) & \cos(m\theta_2)\end{pmatrix}
+```
 
 , where $\theta_d=b^{-2d/D}$ and $b=10000$.
 
